@@ -1,29 +1,39 @@
 # Brand & Domain Monitoring Toolkit
 
-A set of Python scripts to perform **brand monitoring**, **domain reputation lookups**, and **website snapshot generation** — useful for digital brand protection and domain research workflows.
+A Python toolkit for brand protection and domain intelligence — performing bulk domain lookups, reachability checks, visual screenshot capture, and HTML report generation.
 
-This toolkit helps you:
-- Lookup bulk domains
-- Generate HTML reports
-- Capture website snapshots
-- Monitor brand-related domain data
+## Scripts
 
----
+| Script | Description |
+|--------|-------------|
+| `bulk-domain-reachability-check.py` | Checks reachability of bulk domain lists and flags unreachable or suspicious domains |
+| `domain_visual_report_generator` | Captures full-page screenshots of domains and compiles them into a visual HTML report |
+| `screenshot_collector.py` | Standalone screenshot collector for domain archival and forensic documentation |
 
-## 📦 Features
+## Use Cases
 
-| Script | Purpose |
-|--------|---------|
-| `Bulkdomain.py` | Process & analyze lists of domains in bulk |
-| `HTML SC.py` | Generate an HTML snapshot/report for domain results |
-| `Snapshot domains.py` | Take domain screenshots / snapshots |
-| `report.html` | Output of past runs (sample report) |
+- Detect typosquatting and brand impersonation domains
+- Monitor domain infrastructure changes over time
+- Generate visual evidence reports for incident response
+- Perform bulk reachability assessments on suspected phishing domains
 
----
-
-## 🛠️ Requirements
-
-The project uses Python and may depend on external APIs/tools. Install dependencies with:
+## Requirements
 
 ```bash
 pip install -r requirements.txt
+```
+
+## Usage
+
+```bash
+# Run bulk reachability check
+python bulk-domain-reachability-check.py
+
+# Generate visual domain report
+python screenshot_collector.py
+```
+
+## Author
+
+**ASHDEX** — Security Researcher & Architect  
+[ashdex.com](https://ashdex.com)
